@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <nav>
+        <nav class="nav">
             <a href="#">Home /</a>
             <a href="#">Order history /</a>
             <a href="#">Orders Details</a>
@@ -20,14 +20,15 @@
             <h2>Order #273666</h2>
         </div>
         <div>
-            <p>Order Placed:&nbsp;&nbsp;&nbsp;17, July, 2021&nbsp;&nbsp;&nbsp;13:06:18</p>
-            <p>Status:&nbsp;&nbsp;&nbsp;Pending</p>
+            <p> <b>Order Placed:</b> &nbsp;&nbsp;&nbsp;17, July, 2021&nbsp;&nbsp;&nbsp; <span
+                    class="time">13:06:18</samp></p>
+            <p style="color: orange;"> <b style="color: black;">Status:</b> &nbsp;&nbsp;&nbsp;Pending</p>
         </div>
         <container class="container">
             <div class="div1">
                 <div style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
                     <table>
-                        <tr>
+                        <tr class="pro">
                             <th>Proudect</th>
                             <th>Color</th>
                             <th>Capacity</th>
@@ -35,9 +36,9 @@
                             <th>Price</th>
                         </tr>
                         <tr>
-                            <td style="display: flex;"> <img src="./assists/huawei-p20-pro-128gb.jpg" alt="" width="100"
-                                    height="100">
-                                <p style="margin-top: 5%;">Huawei P20 Pro 128GB</p>
+                            <td class="fix" style="display: flex;"> <img src="./assists/huawei-p20-pro-128gb.jpg" alt=""
+                                    width="100" height="100">
+                                <p class="huawei" style="margin-top: 5%;">Huawei P20 Pro 128GB</p>
                             </td>
                             <td>Blue</td>
                             <td>64 GB</td>
@@ -53,7 +54,7 @@
                             <p>Tax</p>
                             <b>Total</b>
                         </div>
-                        <div style="width: 50%;text-align: end;">
+                        <div class="div4" style="width: 50%;text-align: end;">
                             <p>1300 JD</p>
                             <p>10 JD</p>
                             <p>14 JD</p>
@@ -61,33 +62,33 @@
                         </div>
                     </container>
                 </div>
-                <div>
-                    <button class="button">PDF Invoice</button>
-                    <button class="button">Print</button>
-                    <b style='font-size:15px;color: #e00000;margin-left: 57%;'>Cancel Order &nbsp; &#8594;</b>
-                </div>
             </div>
             <div class="div2">
                 <div style="background-color: rgb(0 0 0 / 2%);height: 100%;">
-                    <div style="font-size: 15px;">
+                    <div class="middle" style="font-size: 15px;">
                         <b>Shipping Address</b>
                         <p style="color: gray;">name@domainname.com</p>
                         <p style="color: gray;">00962 79 998 9898</p>
                         <p style="color: gray;">Jordan, City, zipcode, street name</p>
                     </div>
                     <hr style="border-width:0;background-color:#80808066;margin-top: 20%;">
-                    <div style="font-size: 15px;">
+                    <div class="middle" style="font-size: 15px;">
                         <b>Delivery Method</b>
                         <p style="color: gray;">Normal Delivery</p>
                     </div>
                     <hr style="border-width:0;background-color:#80808066;margin-top: 20%;">
-                    <div style="font-size: 15px;">
+                    <div class="middle" style="font-size: 15px;">
                         <b>Payment Method</b>
                         <p style="color: gray;">Cash</p>
                     </div>
                 </div>
             </div>
         </container>
+        <div class="butt">
+            <button class="button">PDF Invoice</button>
+            <button class="button">Print</button>
+            <b class="cancel">Cancel Order &nbsp; &#8594;</b>
+        </div>
     </main>
 
 </body>
